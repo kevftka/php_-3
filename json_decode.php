@@ -15,10 +15,11 @@ print_r($persona);
 // Ejercicio: Decodifica el JSON de tu película favorita del ejercicio anterior
 $jsonPelicula = '{
     "titulo":"Amenaza Fantasma",
-    "director":"George Lucas",
-    "año":1999,
-    "actores":["Lean Neeson","Ian Mcdarmit","Edwar Mcgregor]",
-    }';
+    "Director": "George Lucas",
+    "Año":1999,
+    "actores":["Lean Neeson","Ian Mcdarmit","Edwar Mcgregor"]
+}';
+
 $peliculaFavorita = json_decode($jsonPelicula, true);
 echo "</br>Información de tu película favorita decodificada:</br>";
 print_r($peliculaFavorita);
